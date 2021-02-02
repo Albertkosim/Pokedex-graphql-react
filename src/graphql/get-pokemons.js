@@ -6,8 +6,7 @@ export const get_pokemons = gql`
       id
       name
       image
-      maxHP
-      maxCP
+      types
       attacks {
         special {
           name

@@ -14,8 +14,8 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <div onClick={(e) => console.log("clicked")}>
-        <PokemonsContainer />
+      <div>
+        <PokemonsContainer  />
       </div>
     </ApolloProvider>
   );

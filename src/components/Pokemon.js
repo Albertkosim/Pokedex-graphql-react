@@ -1,11 +1,11 @@
 import React from "react";
 
-
-
 export function Pokemon({ pokemon }) {
   return (
     <div className="pokemon">
-      <button>test</button>
+      <button onClick={(e) => console.log("clicked")}>test</button>
+      <div className="pokemon_id"></div>
+
       <div className="pokemon_name">
         <p>{pokemon.name}</p>
       </div>

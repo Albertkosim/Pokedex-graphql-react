@@ -6,9 +6,9 @@ import { Pokemon } from "../components/Pokemon";
 
 export function PokemonsContainer() {
   const { data: { pokemons = [] } = {} } = useQuery(get_pokemons, {
-    variables: { first: 9 },
+    variables: { first: 20 },
   });
-//Based on Graphql pokeapi requirement of first:Int!
+  //Based on Graphql pokeapi requirement of first:Int!
 
   return (
     <div className="container">
@@ -19,5 +19,5 @@ export function PokemonsContainer() {
     </div>
   );
 }
- 
+
 //Mapping pokemon with keys for rendering later on
